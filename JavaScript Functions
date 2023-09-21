@@ -1,17 +1,44 @@
+Functions
 "use strict";
 
 var myNameIs = 'Byron'; 
 
+
 function sayHello(name) {
     console.log("Hello from " + name);
 }
+
 sayHello(myNameIs);
 
 var random = Math.floor((Math.random() * 100) + 1);
 
 function isOdd(number) {
-    var message = (number % 2 === 0) ? "Even" : "Odd";
-    console.log("The number " + number + " is " + message);
+    if (number % 2 === 0) {
+        console.log("The number " + number + " is even.");
+    } else {
+        console.log("The number " + number + " is odd.");
+    }
 }
 
 isOdd(random);
+
+
+User Interactions 
+"use strict";
+
+var userName = prompt("What's your name?");
+if (userName === null || userName.trim() === "") {
+    alert("Please enter a valid name.");
+} else {
+    alert("Welcome, " + userName + "!");
+    
+    var likePizza = prompt("Do you like pizza? (Yes/No)").toLowerCase();
+    
+    if (likePizza === "yes") {
+        alert("Great choice, " + userName + "! Pizza is the best!");
+    } else if (likePizza === "no") {
+        alert("Oh no, " + userName + " how sad!");
+    } else {
+        alert("Invalid input. Please enter 'Yes' or 'No' for liking pizza.");
+    }
+}
