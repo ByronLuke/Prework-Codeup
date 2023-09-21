@@ -1,1 +1,17 @@
+"use strict";
 
+var myNameIs = 'Byron'; 
+
+function sayHello(name) {
+    console.log("Hello from " + name);
+}
+sayHello(myNameIs);
+
+var random = Math.floor((Math.random() * 100) + 1);
+
+function isOdd(number) {
+    var message = (number % 2 === 0) ? "Even" : "Odd";
+    console.log("The number " + number + " is " + message);
+}
+
+isOdd(random);
