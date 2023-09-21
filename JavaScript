@@ -1,0 +1,33 @@
+var sample = "Hello Codeup";
+
+var length = sample.length;
+console.log("Number of characters in the string: " + length);
+
+var uppercaseSample = sample.toUpperCase();
+console.log("Uppercase sample: " + uppercaseSample);
+
+var lowercaseSample = sample.toLowerCase();
+console.log("Lowercase sample: " + lowercaseSample);
+
+sample += " Students";
+console.log("Updated sample: " + sample);
+
+sample = sample.replace("Students", "Class");
+console.log("Replaced sample: " + sample);
+
+var indexOfC = sample.indexOf("c");
+console.log("Index of 'c': " + indexOfC);
+
+var indexOfCapitalC = sample.indexOf("C");
+console.log("Index of 'C': " + indexOfCapitalC);
+
+var startIndexOfCodeup = sample.indexOf("Codeup");
+var codeupSubstring = sample.substring(startIndexOfCodeup, startIndexOfCodeup + "Codeup".length);
+console.log("Substring with 'Codeup': " + codeupSubstring);
+
+var numericString1 = "123";
+var numericString2 = "3.14";
+var parsedNumber1 = parseInt(numericString1);
+var parsedNumber2 = parseFloat(numericString2);
+console.log("Parsed Integer: " + parsedNumber1);
+console.log("Parsed Float: " + parsedNumber2);
